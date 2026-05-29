@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty - Personagens</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Rick and Morty</h1>
+            <p>Os personagens mais loucos do multiverso!</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Barra de filtros -->
+        <div class="filters">
+            <button class="filter-btn active" data-status="all">Todos</button>
+            <button class="filter-btn" data-status="alive">Vivos</button>
+            <button class="filter-btn" data-status="dead">Mortos</button>
+            <button class="filter-btn" data-status="unknown">Desconhecido</button>
+        </div>
+
+        <!-- Loading -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Carregando personagens...</p>
+        </div>
+
+        <!-- Grid de Cards -->
+        <div class="cards-container" id="cardsContainer"></div>
+    </main>
+
+    <footer>
+        <p>Dados fornecidos pela <a href="https://rickandmortyapi.com/" target="_blank">Rick and Morty API</a></p>
+        <p>Projeto desenvolvido para faculdade - Consumo de API com JavaScript</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
